@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Barra de navegação*/
+#navBar{
+    width: 100%;
+    background-image: url(imgs/fundo_topo.jpg);
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#navBar .logo{
+    width: 200px;
+    height: 122px;
+    margin-left: 50px;
+}
+#navBar .logo img{
+    width:80%;
+    height: 60%;
+    margin: 20px;
+    padding: 10px;
+}
+#navBar #menu ul{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
+   
+}
+#navBar #menu ul li{
+    margin-right: 50px;
+}
+#navBar #menu ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+#navBar #menu ul li a:hover{
+    color: rgb(13, 112, 241);
+}
+
+/*Slider*/
+#slider{
+   width: 100%;
+   height: 400px;
+}
+#slide2,#slide3,#slide4, #slide5,#slide6{
+    opacity: 0;
+    position: absolute;
+}
+.pic{
+    width:100%;
+}
+
+/*Busca*/
+#busca{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.div_busca{
+    margin: auto;
+    display: inline;
+}
+#f_busca{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+}
+label{
+    display: block;
+}
+input[type='submit']{
+    background-color: cornflowerblue;
+    border: none;
+    outline: none;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    transition: .5s;
+}
+input[type='submit']:hover{
+    background-color: red;
+    color: #fff;
+}
+
+/*Destaques*/
+#destaques{
+    display: flex;
+    padding: 15px 0;
+}
+.destaqContent{
+    margin: auto;
+    padding: 50px;
+    background: cornflowerblue;
+    border-radius: 100%;
+    transition: .5s;
+}
+.destaqContent:hover{
+    background:red;
+}
+
+/*Footer*/
+p{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 30px auto;
+    padding: 10px;
+    background: cornflowerblue;
+}
+p a{
+    text-decoration: none;
+    margin: 0 20px;
+    color: #fff;
+}
+p a:hover{
+    color: red;
+}
+
+/*Login*/
+#main{
+    padding: 20px;
+}
+#f_login input{ 
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 300px;
+    font-size: 1.3em;
+    color: #888;
+}
+#f_login input[type=submit]{ 
+    color: #000;
+}
+
+.logErro{
+    color: #f00;
+    background-color: #fff;
+    font-size: 2em;
+    border: 1px solid #f00;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Gestão*/
+.gest{
+    display: inline-block;
+    margin: 50px;
+}
+
+.btnGest{
+    background-color: cornflowerblue;
+    border: none;
+    outline: none;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.btnGest:hover{
+    background-color: red;
+    
+}
+
+.menuB{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 120px;
+    margin: 0;
+    background-color: #555;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0px;
+    visibility: hidden;
+    transition: .2s;
+}
+
+.menuB a{
+    color: #000;
+    width: 200px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+.menuB a:hover{
+    color: #fff;
+}
